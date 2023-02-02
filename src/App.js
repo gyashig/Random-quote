@@ -44,7 +44,7 @@ const App = () => {
       <div className="quoteBox">
         <div className="container">
           <div className="quote">{quote}</div>
-          <div className="quote">{author}</div>
+          <div className="author">-{author}</div>
           <div className="quoteButton"><button onClick={ callBoth}>Change Quote</button></div>
         </div>
       </div> 
