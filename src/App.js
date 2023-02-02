@@ -34,6 +34,10 @@ const App = () => {
       const randomColor= '#'+Math.random().toString(16).slice(2,8)
       setChangeColor(randomColor)
     }
+    function callBoth(){
+      quoteAPI();
+      handleClick();
+    }
   
   return (
     <div className="App" style={{backgroundColor: `${changeColor}`}}>
@@ -41,7 +45,7 @@ const App = () => {
         <div className="container">
           <div className="quote">{quote}</div>
           <div className="quote">{author}</div>
-          <div className="quoteButton"><button onClick={quoteAPI,handleClick}>Change Quote</button></div>
+          <div className="quoteButton"><button onClick={ callBoth}>Change Quote</button></div>
         </div>
       </div> 
       
