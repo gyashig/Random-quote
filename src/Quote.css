@@ -1,0 +1,31 @@
+.App{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.quoteBox{
+    position: absolute;
+    background-color: aqua;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em;
+    border-radius: 10px;
+}
+.quoteButton{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+button{
+    background-color:chocolate;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color:black;
+
+}
